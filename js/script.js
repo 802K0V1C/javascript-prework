@@ -1,3 +1,5 @@
+let playerMove = 'papier';
+
 function printMessage(msg){
 	let div = document.createElement('div');
 	div.innerHTML = msg;
