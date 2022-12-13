@@ -27,10 +27,21 @@ let playerMove = 'nieznany ruch';
 if(playerInput == '1'){
   	playerMove = 'kamień';
 }
-else if (playerInput =='2'){
+else if(playerInput =='2'){
 	playerMove = 'nożyce';
 }
-else if (playerInput =='3'){
+else if(playerInput =='3'){
 	playerMove = 'papier';
 }
 printMessage('Twój ruch to: ' + playerMove);
+
+//Results
+if(computerMove == 'kamień' && playerMove == 'papier'){
+	printMessage('Ty wygrywasz!');
+}
+else if(computerMove == 'kamień' && playerMove == 'kamień'){
+	printMessage('Mamy remis')
+}
+else if(computerMove == 'kamień' && playerMove == 'nożyce'){
+	printMessage('Komputer wygrywa')
+}
