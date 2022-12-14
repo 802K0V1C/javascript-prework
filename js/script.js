@@ -22,7 +22,6 @@ const getMoveName = (randomNumber) => {
 	  computerMove = 'papier';
   }
 }
-let computerMove = getMoveName(randomNumber);
 /*
 if(randomNumber == 1){
   	computerMove = 'kamień';
