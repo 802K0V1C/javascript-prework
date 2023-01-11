@@ -4,10 +4,10 @@ const getMoveName = (moveId) => {
 		return 'kamień';
   }
   	else if(moveId == 2){
-	  return 'nożyce';
+	  	return 'nożyce';
   }
   	else if(moveId == 3){
-	  return 'papier';
+	  	return 'papier';
   }
 }
 
@@ -51,6 +51,9 @@ else if(playerInput =='3'){
 printMessage('Twój ruch to: ' + playerMove);
 
 //Results
+const displayResult = (computerMove, playerMove)
+	printMessage('Zagrałem ' + computerMove + ' a ty ' + playerMove);
+
 if(computerMove == 'kamień' && playerMove == 'papier'){
 	printMessage('Ty wygrywasz!');
 }
