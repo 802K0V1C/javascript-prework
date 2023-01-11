@@ -32,7 +32,7 @@ else if(randomNumber == 3){
 printMessage('Mój ruch to: ' + computerMove);
 
 //Player moves
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: nożyce , 3: papier.');
 
 console.log('Gracz wpisał: ' + playerInput);
 
