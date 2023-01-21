@@ -1,3 +1,4 @@
+{
 function playGame(playerInput){
 
 
@@ -12,7 +13,6 @@ const getMoveName = (moveId) => {
   	else if(moveId == 3){
 	  	return 'papier';
   }
-}
 
 //Computer moves
 let randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -88,26 +88,15 @@ else if(computerMove == 'nożyce' && playerMove == 'nożyce'){
 
 //Listeners
 
-function buttonClicked(){
-	playGame(1);
-}
-let playRock = document.getElementById('play-rock');
+document.getElementById('play-rock').addEventListener('click', function() {
+    playGame(1);
+  });
 
-playRock.addEventListener('click', buttonClicked);
+  document.getElementById('play-scissors').addEventListener('click', function() {
+    playGame(2);
+  });
 
-
-function buttonClicked(){
-	playGame(2);
-}
-let playScissors = document.getElementById('play-scissors');
-
-playScissors.addEventListener('click', buttonClicked);
-
-
-function buttonClicked(){
-	playGame(3);
-
-let playPaper = document.getElementById('play-paper');
-
-playPaper.addEventListener('click', buttonClicked);
+  document.getElementById('play-paper').addEventListener('click', function() {
+    playGame(3);
+  });
 }
